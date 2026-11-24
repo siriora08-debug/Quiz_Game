@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* Home Page */
+
+.home-container {
+    background: white;
+    max-width: 550px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #5b4baf;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: #5b4baf;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 5px;
+}
+
+button:hover {
+    background: #40328e;
+}
+
+.info {
+    background: #f1efff;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Quiz Page */
+
+.quiz-container {
+    background: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.quiz-container h1 {
+    text-align: center;
+}
+
+#welcome {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.question-box {
+    background: #f5f4ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.question-box h3 {
+    margin-bottom: 15px;
+}
+
+.option {
+    display: block;
+    background: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #e4e0ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+/* Result Page */
+
+.result-container {
+    background: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.score-box {
+    background: #f0edff;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 12px;
+}
+
+.score-box h1 {
+    font-size: 50px;
+    color: #5b4baf;
+}
+
+.summary-box {
+    background: #f5f4ff;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.summary-box p {
+    margin: 10px 0;
+}
+
+.summary-box strong {
+    color: #5b4baf;
+}
+
+@media (max-width: 600px) {
+
+    .home-container,
+    .quiz-container,
+    .result-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+}

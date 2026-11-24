@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="home-container">
+
+        <h1>🌐 Web Technology Quiz</h1>
+
+        <p class="subtitle">Test Your Web Technology Knowledge!</p>
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter Your Name"
+        >
+
+        <button onclick="startQuiz()">Start Quiz</button>
+
+        <div class="info">
+            <h3>Quiz Instructions</h3>
+            <p>✔ Total Questions: 10</p>
+            <p>✔ Each question carries 1 mark.</p>
+            <p>✔ Select one correct answer.</p>
+            <p>✔ Submit to view your final score.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function startQuiz() {
+
+            let name = document.getElementById("studentName").value.trim();
+
+            if (name === "") {
+                alert("Please enter your name!");
+                return;
+            }
+
+            localStorage.setItem("studentName", name);
+
+            window.location.href = "quiz.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Results - Web Technology Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .result-container {
+            background: white;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .result-title {
+            color: #5b4baf;
+            font-size: 32px;
+        }
+
+        .score-box {
+            background: #f0edff;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 12px;
+        }
+
+        .score-box h1 {
+            font-size: 55px;
+            color: #5b4baf;
+        }
+
+        .summary-box {
+            background: #f5f4ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .summary-box h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .summary-box p {
+            margin: 10px 0;
+        }
+
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+
+        .result-buttons {
+            margin-top: 25px;
+        }
+
+        @media(max-width: 600px) {
+            .result-container {
+                padding: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <h1 class="result-title">🎉 Quiz Completed!</h1>
+
+        <h2 id="student">Student Name</h2>
+
+        <div class="score-box">
+
+            <h2>Your Final Score</h2>
+
+            <h1 id="score">0 / 10</h1>
+
+            <h3 id="percentage">Percentage: 0%</h3>
+
+            <h3 id="message">Good Luck!</h3>
+
+        </div>
+
+        <h2>📋 Answer Summary</h2>
+
+        <div id="summary">
+
+            <!-- Answers will appear here -->
+
+        </div>
+
+        <div class="result-buttons">
+
+            <button onclick="restartQuiz()">
+                🔄 Retake Quiz
+            </button>
+
+            <button onclick="goHome()">
+                🏠 Home Page
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+
+    <script src="result.js"></script>
+
+</body>
+
+</html>
